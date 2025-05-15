@@ -2,21 +2,154 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shameless Bikers</title>
-  <!-- zelfde <style> en meta's als nu -->
+  <style>
+    :root {
+      --main-bg: #0d0d0d;
+      --accent: #ff4444;
+      --text-light: #eeeeee;
+      --text-muted: #aaaaaa;
+      --section-bg: #1a1a1a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #000;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .slogan {
+      margin-top: 10px;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      gap: 30px;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      background-color: var(--section-bg);
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      border-radius: 8px;
+      margin-top: 40px;
+    }
+
+    section h2 {
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .ledenlijst {
+      list-style: square;
+      padding-left: 20px;
+      font-size: 1.1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      background-color: white;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #000;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Shameless Bikers</h1>
     <p class="slogan">Vrijheid. Broederschap. Benzine.</p>
-    <nav>... (zelfde als hierboven)</nav>
+    <nav>
+      <ul>
+        <li><a href="#over">Over ons</a></li>
+        <li><a href="#leden">Leden</a></li>
+        <li><a href="#googleform">Inschrijven</a></li>
+      </ul>
+    </nav>
   </header>
-  
-  <section>
-    <h2>Welkom!</h2>
-    <p>Welkom op de officiële site van de Shameless Bikers. Bekijk onze pagina’s en sluit je aan bij de rit!</p>
+
+  <section id="over">
+    <h2>Over ons</h2>
+    <p>
+      Shameless Bikers is een trotse motorgroep die de open wegen verkent. Wij geloven in broederschap, avontuur en het geluid van een krachtige motor. 
+      Onze ritten brengen ons door steden en bergen, en onze vriendschappen zijn gesmeed door asfalt en olie.
+    </p>
   </section>
 
-  <footer>...</footer>
+  <section id="leden">
+    <h2>Onze leden</h2>
+    <ul class="ledenlijst">
+      <li>Big Mike – Oprichter en Voorzitter</li>
+      <li>Diesel Dave – Road Captain</li>
+      <li>Roxy Rider – Hoofdmonteur</li>
+      <li>Iron Joe – Sergeant-at-Arms</li>
+    </ul>
+  </section>
+
+  <section id="googleform">
+    <h2>Ride-out Inschrijven</h2>
+    <p style="text-align:center; margin-bottom: 20px;">
+      Vul het onderstaande formulier in om je in te schrijven voor de volgende rit. Iedereen is welkom!
+    </p>
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdSA8b2b4dhUfnksH6WByI1WaJKGi9xf1ct9zMThTxFkrHLwg/viewform?embedded=true"
+      allowfullscreen>
+      Laden…
+    </iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Shameless Bikers – All rights reserved
+  </footer>
+
 </body>
 </html>
