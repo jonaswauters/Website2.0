@@ -52,26 +52,34 @@
       border-radius: 2px;
     }
 
-    /* Hero */
     .hero {
-      background: #0d0d0d url('1000008850.jpg') center center no-repeat;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 80vh;
-      display: flex; flex-direction: column;
-      justify-content: center; align-items: center;
-      text-align: center; padding: 0 1rem;
-      color: #fff; text-shadow: 0 0 10px #000;
-    }
-    .hero h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 3rem; margin-bottom: 1rem;
-      text-transform: uppercase; letter-spacing: 0.15em;
-    }
-    .hero p {
-      font-size: 1.2rem; margin-bottom: 2rem;
-    }
+  background: #0d0d0d url('1000008850.jpg') center center no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #0d0d0d;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  max-width: 600px; /* <<< maximale breedte */
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2rem; /* eerder 3rem */
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1rem; /* eerder 1.2rem */
+  margin-bottom: 1.5rem;
+}
     .btn-primary {
       background: #ff4444; color: white;
       padding: 1rem 2rem; font-weight: bold;
